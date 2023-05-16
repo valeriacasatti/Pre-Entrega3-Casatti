@@ -9,6 +9,47 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <div class="container">
+        <aside>
+            <header>
+                <a href="index.html"><h1 class="logo">mi tienda</h1></a>
+            </header>
+            <nav>
+                <ul>
+                    <li><a class="botonMenu botonVolver" href="index.html"><i class="bi bi-arrow-left"></i>Seguir comprando</a></li>
+                    <li><a class="botonMenu botonCarrito active" href="carrito.html"><i class="bi bi-cart2"></i>Carrito</a></li>
+                </ul>
+            </nav>
+            <footer>
+                <a href="mailto: valeria.casatti@gmail.com"><i class="bi bi-envelope"></i></a>
+                <a href="https://www.facebook.com/ValeCasatti/?_rdc=1&_rdr"><i class="bi bi-facebook"></i></a>
+                <a href="https://wa.me/5493516177344"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.instagram.com/valocasatti/"><i class="bi bi-instagram"></i></a>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="tituloPrincipal">Carrito</h2>
+            <div class="contenedorCarrito">
+                <p id="carritoVacio" class="carritoVacio">Tu carrito esta vacío!</p>
+                <div id="carritoProductos" class="carritoProductos">
+                    <!--se completa con JS-->
+                </div>
+                <div id="carritoAcciones" class="carritoAcciones">
+                    <div class="carritoAccionesLeft">
+                        <button class="accionesVaciarCarrito">Vaciar carrito</button>
+                    </div>
+                    <div class="carritoAccionesRight">
+                        <div class="accionesTotal">
+                            <p>Total:</p>
+                            <p class="total"></p>
+                        </div>
+                        <button id="accionesComprar" class="accionesComprar">Ir a pagar</button>
+                    </div>
+                    <p id="carritoComprado" class="carritoComprado disabled">Muchas gracias por tu compra! 🖤</p>
+                </div>
+            </div>
+        </main>
+    </div>
     <script src="./js/carrito.js"></script>
 </body>
 </html>

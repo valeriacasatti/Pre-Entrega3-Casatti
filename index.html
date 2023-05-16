@@ -9,6 +9,33 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
+    <div class="container">
+        <aside>
+            <header>
+                <a href="index.html"><h1 class="logo">mi tienda</h1></a>
+            </header>
+            <nav>
+                <ul class="menu">
+                    <li><button id="todos" class="botonMenu botonCategoria active"><i class="bi bi-arrow-right"></i>Productos</button></li>
+                    <li><button id="top" class="botonMenu botonCategoria"><i class="bi bi-arrow-right"></i>Top</button></li>
+                    <li><button id="bottom" class="botonMenu botonCategoria"><i class="bi bi-arrow-right"></i>Bottom</button></li>
+                    <li><a class="botonMenu botonCarrito" href="carrito.html"><i class="bi bi-cart2"></i>Carrito<span id="numerito" class="numerito">0</span></a></li>
+                </ul>
+            </nav>
+            <footer>
+                <a href="mailto: valeria.casatti@gmail.com"><i class="bi bi-envelope"></i></a>
+                <a href="https://www.facebook.com/ValeCasatti/?_rdc=1&_rdr"><i class="bi bi-facebook"></i></a>
+                <a href="https://wa.me/5493516177344"><i class="bi bi-whatsapp"></i></a>
+                <a href="https://www.instagram.com/valocasatti/"><i class="bi bi-instagram"></i></a>
+            </footer>
+        </aside>
+        <main>
+            <h2 id="tituloPrincipal" class="tituloPrincipal">Todos los productos</h2>
+            <div id="contenedorProductos" class="contenedorProductos">
+                <!--productos cargados con JS-->
+            </div>
+        </main>
+    </div>
     <script src="./js/main.js"></script>
 </body>
 </html>
